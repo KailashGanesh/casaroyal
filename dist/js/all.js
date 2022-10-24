@@ -1,0 +1,2 @@
+const mobileMenu=document.getElementById("mobile-menu");function toggleNav(e){mobileMenu.classList.toggle("overlay__nav--active"),toggleScroll(allowScroll=!e)}function toggleScroll(e){document.body.style.overflow=e?"scroll":"hidden",document.body.scroll=e?"yes":"no"}let header=document.getElementById("header");document.addEventListener("scroll",(e=>{lastKnownScrollPosition=window.scrollY,lastKnownScrollPosition>=100?header.classList.add("header--sticky"):0==lastKnownScrollPosition&&header.classList.remove("header--sticky")}));
+//# sourceMappingURL=all.js.map

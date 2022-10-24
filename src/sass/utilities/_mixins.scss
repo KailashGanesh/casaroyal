@@ -1,0 +1,55 @@
+@mixin dimension($height,$width){
+    height: #{$height};
+    width: #{$width};
+}
+
+@mixin font-color($name, $color){
+    .color-#{$name}{
+        color: $color;
+    }
+}
+
+@mixin font-size($name, $font-size, $line-height){
+    .font-#{$name}{
+        font-size: $font-size;
+        line-height: $line-height;
+    }
+}
+
+@mixin spacing($number) {
+    @for $i from 1 through 15{
+        .mr-#{$i} {
+            margin-right: #{$i * $number}px;
+        }
+        .ml-#{$i} {
+            margin-left: #{$i * $number}px;
+        }
+        .mt-#{$i} {
+            margin-top: #{$i * $number}px;
+        }
+        .mb-#{$i} {
+            margin-bottom: #{$i * $number}px;
+        }
+        .pr-#{$i} {
+            padding-right: #{$i * $number}px;
+        }
+        .pl-#{$i} {
+            padding-left: #{$i * $number}px;
+        }
+        .pt-#{$i} {
+           padding-top: #{$i * $number}px;
+        }
+        .pb-#{$i} {
+            padding-bottom: #{$i * $number}px;
+        }
+
+        .m-#{$i}{
+            margin: #{$i * $number}px;
+        }
+        .p-#{$i}{
+            padding: #{$i * $number}px;
+        }
+    }
+}
+
+@include spacing(4);

@@ -1,0 +1,35 @@
+// colors
+$primary-blue:#2a41e8;
+$orange: #ff5e14;
+$white: #ffffff;
+$gray-one: #ececec;
+$gray-two: #fafafa;
+$gray-three: #f3f3f3;
+$gray-deep: #999999;
+$black-one: #292929;
+$black-two: #151515;
+$yellow: #ffc107;
+$light-purple: #eaedfd;
+
+$color-list: (
+    'primary-blue':$primary-blue,
+    'orange':$orange,
+    'white':$white,
+    'gray-one':$gray-one,
+    'gray-two':$gray-two,
+    'gray-three':$gray-three,
+    'gray-deep':$gray-deep,
+    'black-one':$black-one,
+    'black-two':$black-two,
+    'yellow':$yellow,
+    'light-purple':$light-purple,
+);
+
+// fonts
+$font:'Rubik', sans-serif;
+
+// TODO: Font-sizes
+// TODO: font-color
+// TODO: background color
+// TODO: margin and padding multiple
+// TODO: Flex helper classes
