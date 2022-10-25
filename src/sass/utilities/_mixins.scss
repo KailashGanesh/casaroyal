@@ -17,7 +17,7 @@
 }
 
 @mixin spacing($number) {
-    @for $i from 1 through 15{
+    @for $i from 1 through 50{
         .mr-#{$i} {
             margin-right: #{$i * $number}px;
         }
@@ -53,3 +53,23 @@
 }
 
 @include spacing(4);
+
+
+@each $name, $value in $color-list{
+    .bg-#{$name}{
+        background-color: $value;
+    }
+    .clr-#{$name}{
+        color: $value;
+    }
+    .fill-#{$name}{
+        fill: $value;
+    }
+}
+
+@each $name, $size in $font-list{
+    .fs-#{$name}{
+        font-size: $size;
+    }
+}
+

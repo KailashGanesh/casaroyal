@@ -13,35 +13,232 @@
 </head>
 
 <body>
-    <header></header>
+    <header class="header">
+        <div class="container--edge pl-5 pt-3 pb-3 fs-reset">
+            <ul>
+                <li>
+                    <a href="javascript:void(0);"></a>
+                    <svg class="header__logo ml-2">
+                        <use href="dist/symbol-defs.svg#icon-casarolyablacklogo"></use>
+                    </svg>
+                </li>
+                <li class="fs-14 mobile-hide"><a href="javascript:void(0);" class="link pl-5">HOMEPAGE
+                        <svg width="14" height="14" class="va-middle">
+                            <use href="dist/symbol-defs.svg#icon-angle-down-solid"></use>
+                        </svg>
+                    </a></li>
+                <li class="fs-14 mobile-hide"><a href="javascript:void(0);" class="link pl-5">PROPERTIES
+                        <svg width="14" height="14" class="va-middle">
+                            <use href="dist/symbol-defs.svg#icon-angle-down-solid"></use>
+                        </svg>
+                    </a></li>
+                <li class="fs-14 mobile-hide"><a href="javascript:void(0);" class="link pl-5">ABOUT</a></li>
+                <li class="fs-14 mobile-hide"><a href="javascript:void(0);" class="link pl-5">CONTACT</a></li>
+            </ul>
+
+            <ul class="mobile-hide">
+                <li  class="fs-14">
+                    <a class="link" href="javascript:void(0);">
+                        COMPARE
+                        <svg width="20" height="20" class="ml-1 va-top">
+                            <use href="dist/symbol-defs.svg#icon-circle-check-regular"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="pl-5">
+                    <a href="javascript:void(0);">
+                        <svg width="20" height="20" class="va-middle">
+                            <use href="dist/symbol-defs.svg#icon-heart-regular"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="pl-5">
+                    <a href="" class="btn-orange-sq">
+                        Submit listing
+                    </a>
+                </li>
+            </ul>
+            <a href="javascript:void(0)" class="desktop-hide pr-5">
+                <svg width="30" height="30" class="fill-black">
+                    <use href="dist/symbol-defs.svg#icon-menu"></use>
+                </svg>
+            </a>
+
+        </div>
+    </header>
+
     <main>
-        <section class="hero">
-            <div class="hero__wraper">
-                <article>
-                    <h1>Let Us Guide You Home</h1>
-                    <p>Find the house of your dreams</p>
-                </article>
-                <form action="/">
-                    <div>
-                        <label for="type">type</label>
-                        <select name="type" id="">
-                            <option value="Select Type">Select Type</option>
-                        </select>
-                    </div>
-                    <div>
-                        <label for="type">status</label>
-                        <select name="status" id="">
-                            <option value="Select Type">Select Status</option>
-                        </select>
-                    </div>
-                    <input type="text" placeholder="Search for properties, Suburbs or keywords...">
-                    <input type="submit" value="Find Properties" style="text-transform:uppercase;">
-                </form>
+        <section class="hero pt-25">
+            <div class="container">
+                <div class="hero__warper">
+                    <article>
+                        <h1 class="mb-3 fs-50 fs-36 fw-500">Let Us Guide You Home</h1>
+                        <p class="mb-12 fs-18 fw-300">Find the house of your dreams</p>
+                    </article>
+                    <form action="/" class="hero__form bg-white clr-black-one p-4">
+
+                        <div class="select p-3">
+                            <label for="type" class="select__label pl-2">Type</label>
+                            <select name="type" id="" class="select__dropdown pl-1">
+                                <option value="Select Type">Select Type</option>
+                            </select>
+                        </div>
+
+                        <div class="select p-3">
+                            <label for="type" class="select__label pl-2">Status</label>
+                            <select name="type" id="" class="select__dropdown pl-1">
+                                <option value="Select Type">Select Status</option>
+                            </select>
+                        </div>
+
+                        <input class="hero__search pl-4 pt-5 pb-5  bg-gray-four" type="text" placeholder="Search for properties, Suburbs or keywords...">
+
+                        <input class="btn btn-blue" type="submit" value="Find Properties">
+                    </form>
+                </div>
             </div>
         </section>
+
+        <section class="featured pt-30 ta-c bg-gray-two">
+            <div class="container">
+
+                <p class="m-auto fs-14 clr-gray-deep ta-c mb-3 tt-uppercase">casaroyal real estate agency</p>
+                <p class="m-auto fs-56 clr-black ta-c mb-20"><span class="fw-500">Featured</span> Properties</p>
+                <div class="flex-warp mb-17">
+                    <div class="card"></div>
+                    <div class="card"></div>
+                    <div class="card"></div>
+                    <div class="card"></div>
+                    <div class="card"></div>
+                    <div class="card"></div>
+                </div>
+
+                <a href="javascript:void(0);" class="btn btn-black-rounded tt-uppercase ">all properities</a>
+            </div>
+        </section>
+
+        <section class="hotdeal pt-45 bg-gray-two">
+            <div class="container">
+                <p class="m-auto fs-14 clr-gray-deep ta-c mb-3 tt-uppercase">casaroyal real estate agency</p>
+                <p class="m-auto fs-56 clr-black ta-c mb-20"><span class="fw-500">Hot</span>Deal</p>
+
+                <div class="hotdeal__card">
+                    <div class="hotdeal__image">
+                        <span class="hotdeal__tag fs-16 bg-white clr-primary-blue pt-3 pb-3 pl-5 pr-5 br-4 d-iblock">Photos (4)</span>
+                    </div>
+                    <div class="hotdeal__details bg-black-one ta-c p-15">
+                        <p class="fs-18 clr-gray-deep mb-9">Residential Towe For Rent</p>
+                        <p class="fs-36 clr-white mb-10">15 Apartments of Type B</p>
+                        <p class="fs-18 clr-gray-deep mb-13">Los Angeles, CA</p>
+                        <span class="fs-16 bg-orange clr-white pt-3 pb-3 pl-6 pr-6 br-4 d-iblock mb-15">From $1,700.00 Per Month</span>
+
+
+                        <svg class="fill-gray-deep d-block m-auto mb-16" width="60" height="60">
+                            <use href="dist/symbol-defs.svg#icon-circle-play"></use>
+                        </svg>
+
+                        <div class="ta-l hotdeal__infos">
+                            <div class="hotdeal__info">
+                                <svg class="fill-gray-deep" width="36" height="36">
+                                    <use href="dist/symbol-defs.svg#icon-ruler-combined-solid"></use>
+                                </svg>
+                                <div class="ml-2">
+                                    <p class="clr-gray-deep fs-16 tw-500">1600</p>
+                                    <p class="clr-gray-deep fs-16 fw-300">Sq Ft</p>
+                                </div>
+                            </div>
+
+                            <div class="hotdeal__info">
+                                <svg class="fill-gray-deep" width="36" height="36">
+                                    <use href="dist/symbol-defs.svg#icon-bed-solid"></use>
+                                </svg>
+                                <div class="ml-2">
+                                    <p class="clr-gray-deep fs-16 tw-500">2</p>
+                                    <p class="clr-gray-deep fs-16 fw-300">Beds</p>
+                                </div>
+                            </div>
+
+                            <div class="hotdeal__info">
+                                <svg class="fill-gray-deep" width="36" height="36">
+                                    <use href="dist/symbol-defs.svg#icon-bath-solid"></use>
+                                </svg>
+                                <div class="ml-2">
+                                    <p class="clr-gray-deep fs-16 tw-500">1</p>
+                                    <p class="clr-gray-deep fs-16 fw-300">Bath</p>
+                                </div>
+                            </div>
+
+                            <div class="hotdeal__info">
+                                <svg class="fill-gray-deep" width="26" height="26">
+                                    <use href="dist/symbol-defs.svg#icon-car-solid"></use>
+                                </svg>
+                                <div class="ml-2">
+                                    <p class="clr-gray-deep fs-16 tw-500">1</p>
+                                    <p class="clr-gray-deep fs-16 fw-300">Garage</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="properties pt-45 pb-30 bg-gray-two">
+            <div class="container">
+                <p class="m-auto fs-14 clr-gray-deep ta-c mb-3 tt-uppercase">casaroyal real estate agency</p>
+                <p class="m-auto fs-56 clr-black ta-c mb-20"><span class="fw-500">Properties</span> by Area</p>
+
+                <div class="properties__wrapper">
+                    <div class="properties__small losangeles">
+                        <div class="properties__text">
+                            <p class="clr-white fs-32 fw-500">Los Angeles</p>
+                            <svg class="fill-white" width="17" height="17">
+                                <use href="dist/symbol-defs.svg#icon-circle-dot-regular"></use>
+                            </svg>
+                            <span class="clr-white fs-18 fw-300">24 Properties</span>
+                        </div>
+                    </div>
+                    <div class="properties__big sanfrancisco">
+                        <div class="properties__text">
+                            <p class="clr-white fs-32 fw-500">San Francisco</p>
+                            <svg class="fill-white" width="17" height="17">
+                                <use href="dist/symbol-defs.svg#icon-circle-dot-regular"></use>
+                            </svg>
+                            <span class="clr-white fs-18 fw-300">19 Properties</span>
+                        </div>
+                    </div>
+                    <div class="properties__big seattle">
+                        <div class="properties__text">
+                            <p class="clr-white fs-32 fw-500">Seattle</p>
+                            <svg class="fill-white" width="17" height="17">
+                                <use href="dist/symbol-defs.svg#icon-circle-dot-regular"></use>
+                            </svg>
+                            <span class="clr-white fs-18 fw-300">13 Properties</span>
+                        </div>
+                    </div>
+                    <div class="properties__small sandiego">
+                        <div class="properties__text">
+                            <p class="clr-white fs-32 fw-500">San Diego</p>
+                            <svg class="fill-white" width="17" height="17">
+                                <use href="dist/symbol-defs.svg#icon-circle-dot-regular"></use>
+                            </svg>
+                            <span class="clr-white fs-18 fw-300">1 Properties</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
     </main>
 
-    <footer></footer>
+    <!-- <footer class="bg-black-two">
+        <div class="container">
+            <svg class="header__logo ml-2">
+                <use href="dist/symbol-defs.svg#icon-casaroyallogo"></use>
+            </svg>
+        </div>
+    </footer> -->
 
     <script src="dist/js/all.js"></script>
 </body>

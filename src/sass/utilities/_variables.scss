@@ -1,3 +1,11 @@
+$primary-green: #1fdb84;
+$dark-grey-blue: #313a5a;
+$marine: #031d5b;
+$slate-blue: #5b6c94;
+$off-white-bg: #f8f9fc;
+$border-top-blue: #0a8aff;
+
+
 // colors
 $primary-blue:#2a41e8;
 $orange: #ff5e14;
@@ -5,7 +13,9 @@ $white: #ffffff;
 $gray-one: #ececec;
 $gray-two: #fafafa;
 $gray-three: #f3f3f3;
+$gray-four: #ececec;
 $gray-deep: #999999;
+$black: #000000;
 $black-one: #292929;
 $black-two: #151515;
 $yellow: #ffc107;
@@ -18,18 +28,34 @@ $color-list: (
     'gray-one':$gray-one,
     'gray-two':$gray-two,
     'gray-three':$gray-three,
+    'gray-four':$gray-four,
     'gray-deep':$gray-deep,
+    'black':$black,
     'black-one':$black-one,
     'black-two':$black-two,
     'yellow':$yellow,
     'light-purple':$light-purple,
 );
 
+$font-list: (
+    '12':12px,
+    '14':14px,
+    '16':16px,
+    '18':18px,
+    '20':20px,
+    '32':32px,
+    '36':36px,
+    '48':48px,
+    '56':56px,
+    '60':60px,
+
+);
+
 // fonts
 $font:'Rubik', sans-serif;
 
 // TODO: Font-sizes
-// TODO: font-color
-// TODO: background color
-// TODO: margin and padding multiple
+// done: font-color
+// done: background color
+// done: margin and padding multiple
 // TODO: Flex helper classes

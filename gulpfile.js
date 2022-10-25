@@ -27,6 +27,7 @@ function optimizeimg() {
             imagemin.mozjpeg({ quality: 80, progressive: true }),
             imagemin.optipng({ optimizationLevel: 2 }),
         ]))
+        .pipe(imagewebp())
         .pipe(dest('dist/images')) // change to your final/public directory
 };
 
@@ -61,11 +62,11 @@ function jsmin() {
 
 //watchtask
 function watchTask() {
-    watch('src/sass/*.scss', compilescss);
+    watch('src/sass/', compilescss);
     watch('src/js/*.js', jsmin);
     watch('src/images/*', optimizeimg);
-    watch('src/svg/*', makeSvgSprite);
-    watch('dist/images/*.{jpg,png}', webpImage);
+    // watch('src/svg/*', makeSvgSprite);
+    // watch('dist/images/*.{jpg,png}', webpImage);
 }
 
 // Default Gulp task 
@@ -73,7 +74,7 @@ exports.default = series(
     compilescss,
     jsmin,
     optimizeimg,
-    webpImage,
-    makeSvgSprite,
+    // webpImage,
+    // makeSvgSprite,
     watchTask
 );

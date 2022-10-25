@@ -1,0 +1,146 @@
+.featured{
+    .flex-warp{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .card{
+        flex-shrink: 0;
+        width: 370px;
+        height: 500px;
+        background-color: beige;
+
+        @include breakpoint(tablet-below){
+            width: 90%;
+        }
+    }
+}
+
+.hotdeal{
+    &__card{
+        display: flex;
+        flex-direction: row;
+
+        @include breakpoint(tablet-below){
+            flex-direction: column;
+        }
+    }
+
+    &__image{
+        background-image: url('images/hotdeal.webp');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        min-width: 627px;
+        position: relative;
+        @include breakpoint(tablet-below){
+            min-width: 0;
+            min-height: 400px;
+        }
+    }
+
+    &__tag{
+        position: absolute;
+        left: 50px;
+        bottom: 40px;
+    }
+
+    &__details{
+        // position: relative;
+    }
+
+    &__infos{
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        flex-wrap: wrap;
+        justify-content: center;
+        @include breakpoint(tablet-below){
+            
+        }
+        // position: absolute;
+        // left: 50%;
+        // bottom: 40px;
+        // transform: translateX(-50%);
+    }
+
+    &__info{
+        // max-width: 82px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        span{
+            max-width: 40px;
+            line-height: 1;
+        }
+    }
+}
+
+.properties{
+    &__wrapper{
+        display: flex;
+        flex-wrap: wrap;
+        gap:30px;
+    }
+    &__small{
+        flex-basis: calc(30% - 15px);
+        min-height: 360px;
+        background-color: blue;
+        border-radius: 6px;
+        position: relative;
+        transition: transform 0.3s ease-in-out 0s;
+
+        @include breakpoint(tablet-below){
+            flex-basis: 100%;
+        }
+
+        @include breakpoint(tablet-above){
+            &:hover{
+                transform: scale(1.05);
+            }
+        }
+    }
+    &__big{
+        flex-basis: calc(70% - 15px);
+        min-height: 360px;
+        background-color: red;
+        border-radius: 6px;
+        position: relative;
+        transition: transform 0.3s ease-in-out 0s;
+
+        @include breakpoint(tablet-below){
+            flex-basis: 100%;
+        }
+        @include breakpoint(tablet-above){
+            &:hover{
+                transform: scale(1.05);
+            }
+        }
+    }
+
+    &__text{
+        position: absolute;
+        bottom: 18px;
+        left: 31px;
+    }
+    .losangeles{
+        background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ) ,url("images/los-angeles.webp") no-repeat center center;
+        background-size: cover;
+    }
+    .sanfrancisco{
+        background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ) , url("images/san-francisco.webp") no-repeat center center;
+        background-size: cover;
+    }
+    .seattle{
+        background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ) , url("images/seattle.webp") no-repeat center center;
+        background-size: cover;
+    }
+    .sandiego{
+        background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ) , url("images/san-diego.webp") no-repeat center center;
+        background-size: cover;
+    }
+}

@@ -15,9 +15,11 @@
 @import 'base/container';
 
 // components
-// @import 'components/buttons';
+@import 'components/buttons';
+@import 'components/hero';
+@import 'components/select';
 
 // layout
 @import 'layout/header';
 @import 'layout/footer';
-// @import 'layout/other';
+@import 'layout/other';
