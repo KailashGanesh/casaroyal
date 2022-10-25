@@ -1,0 +1,27 @@
+.card{
+    flex-shrink: 0;
+    width: 370px;
+    height: 500px;
+    background-color: white;
+
+    &__image{
+        width: 100%;
+        max-width: 370px;
+    }
+
+    .card__author{
+        display: flex;
+        width: 100%;
+        justify-content:space-between;
+        align-items: center;
+    }
+
+    @include breakpoint(phone-below){
+        width: 100%;
+    }
+
+
+    .card--border-top{
+        border-top: solid 1px #f4f4f4;
+    }
+}

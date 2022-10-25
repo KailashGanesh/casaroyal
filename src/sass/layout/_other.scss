@@ -7,23 +7,13 @@
         align-items: center;
         width: 100%;
     }
-
-    .card{
-        flex-shrink: 0;
-        width: 370px;
-        height: 500px;
-        background-color: beige;
-
-        @include breakpoint(tablet-below){
-            width: 90%;
-        }
-    }
 }
 
 .hotdeal{
     &__card{
         display: flex;
         flex-direction: row;
+
 
         @include breakpoint(tablet-below){
             flex-direction: column;
