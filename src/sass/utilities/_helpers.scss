@@ -68,8 +68,22 @@
 
 // border-radius
 .br-4{border-radius: 4px;}
+.br-6{border-radius: 6px;}
 
 // display
 
 .d-block{display: block;}
 .d-iblock{display: inline-block;}
+
+.d-flex{display: flex;}
+.flex-wrap{flex-wrap: wrap;}
+
+.jc-center{justify-content: center;}
+.ai-center{align-items: center;}
+.jc-phone-center{
+    @include breakpoint(phone-below){
+        justify-content: center;
+    }
+}
+
+.gap-30{gap:30px;}

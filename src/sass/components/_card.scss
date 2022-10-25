@@ -16,9 +16,6 @@
         align-items: center;
     }
 
-    @include breakpoint(phone-below){
-        width: 100%;
-    }
 
 
     .card--border-top{

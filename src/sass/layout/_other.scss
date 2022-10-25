@@ -6,6 +6,12 @@
         justify-content: center;
         align-items: center;
         width: 100%;
+
+        .card{
+            @include breakpoint(phone-below){
+                width: 100%;
+            }
+        }
     }
 }
 
@@ -132,5 +138,30 @@
     .sandiego{
         background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ) , url("images/san-diego.webp") no-repeat center center;
         background-size: cover;
+    }
+}
+
+.sellproperty{ 
+    background:url("images/hero-bg.webp") no-repeat center center;
+    background-size: cover;
+    min-height: 869px;
+
+    @include breakpoint(tablet-below){
+        article{
+            width: 100%;
+            padding: 30px;
+        }
+    }
+
+    &__heading{
+        max-width: 342px;
+        line-height: 1;
+    @include breakpoint(tablet-below){
+        font-size: 50px;
+    }
+    }
+
+    &__content{
+        max-width: 550px;
     }
 }
