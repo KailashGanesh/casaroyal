@@ -1,7 +1,10 @@
 .card{
+    // flex-grow: 1;
     flex-shrink: 0;
+    flex-basis: 370px;
+    max-width: 370px;
     width: 370px;
-    height: 500px;
+    // min-height: 500px;
     background-color: white;
 
     &__image{
@@ -16,9 +19,27 @@
         align-items: center;
     }
 
-
-
     .card--border-top{
         border-top: solid 1px #f4f4f4;
     }
+
+    .card__btn-group{
+        .btn{
+            display: inline-block;
+            border: solid 1px $gray-three;
+            border-radius: 4px;
+            margin-left: -4px;
+            padding: 20px;
+        }
+        .btn:not(:last-child){
+            border-top-right-radius: 0;
+            border-bottom-right-radius: 0;
+        }
+    
+        .btn:not(:first-child){
+            border-top-left-radius: 0;
+            border-bottom-left-radius: 0;
+        }
+    }
+
 }

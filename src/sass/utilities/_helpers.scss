@@ -65,6 +65,9 @@
 
 .tt-uppercase{text-transform: uppercase;}
 
+// line heigh
+.lh-1{line-height: 1;}
+
 
 // border-radius
 .br-4{border-radius: 4px;}
@@ -78,12 +81,18 @@
 .d-flex{display: flex;}
 .flex-wrap{flex-wrap: wrap;}
 
+.flex-direction-col{flex-direction: column;}
 .jc-center{justify-content: center;}
+.jc-space-between{justify-content: space-between;}
+
+.ai-start{align-items: flex-start;}
 .ai-center{align-items: center;}
 .jc-phone-center{
     @include breakpoint(phone-below){
         justify-content: center;
     }
 }
+
+.h-200{height: 200px;}
 
 .gap-30{gap:30px;}
