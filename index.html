@@ -17,16 +17,19 @@
         <div class="container--edge pl-5 pt-3 pb-3 fs-reset">
             <ul>
                 <li>
-                    <a href="javascript:void(0);"></a>
+                    <a href="javascript:void(0);">
                     <svg class="header__logo ml-2">
                         <use href="dist/symbol-defs.svg#icon-casarolyablacklogo"></use>
                     </svg>
+                    </a>
                 </li>
-                <li class="fs-14 mobile-hide"><a href="javascript:void(0);" class="link pl-5">HOMEPAGE
+                <li class="fs-14 mobile-hide">
+                    <a href="javascript:void(0);" class="link pl-5">HOMEPAGE
                         <svg width="14" height="14" class="va-middle">
                             <use href="dist/symbol-defs.svg#icon-angle-down-solid"></use>
                         </svg>
-                    </a></li>
+                    </a>
+                </li>
                 <li class="fs-14 mobile-hide"><a href="javascript:void(0);" class="link pl-5">PROPERTIES
                         <svg width="14" height="14" class="va-middle">
                             <use href="dist/symbol-defs.svg#icon-angle-down-solid"></use>
@@ -58,10 +61,13 @@
                     </a>
                 </li>
             </ul>
-            <a href="javascript:void(0)" class="desktop-hide pr-5">
-                <svg width="30" height="30" class="fill-black">
+            <a href="javascript:void(0)" class="desktop-hide pr-5" id="hamburger">
+                <span class="hamburger"></span>
+                <span class="hamburger"></span>
+                <span class="hamburger"></span>
+                <!-- <svg width="30" height="30" class="fill-black">
                     <use href="dist/symbol-defs.svg#icon-menu"></use>
-                </svg>
+                </svg> -->
             </a>
 
         </div>
@@ -569,7 +575,7 @@
 
                 <div class="carousel mb-22">
 
-                        <div class="card br-4 carousel__start" id="1">
+                        <div class="card br-4 carousel__start">
                             <div class="card__image m-auto p-5">
                                 <img src="dist/images/agent-1.webp" alt="property 1" class="img-fluid br-4">
                             </div>
@@ -590,7 +596,7 @@
                             </div>
                         </div>
 
-                        <div class="card br-4">
+                        <div class="card br-4" id="1">
                             <div class="card__image m-auto p-5">
                                 <img src="dist/images/agent-2.webp" alt="property 1" class="img-fluid br-4">
                             </div>
@@ -634,7 +640,7 @@
 
 
 
-                        <div class="card br-4 carousel__start" id="2">
+                        <div class="card br-4 carousel__start">
                             <div class="card__image m-auto p-5">
                                 <img src="dist/images/agent-3.webp" alt="property 1" class="img-fluid br-4">
                             </div>
@@ -655,7 +661,7 @@
                             </div>
                         </div>
 
-                        <div class="card br-4">
+                        <div class="card br-4" id="2">
                             <div class="card__image m-auto p-5">
                                 <img src="dist/images/agent-1.webp" alt="property 1" class="img-fluid br-4">
                             </div>
@@ -699,7 +705,7 @@
 
 
 
-                        <div class="card br-4 carousel__start" id="3">
+                        <div class="card br-4 carousel__start">
                             <div class="card__image m-auto p-5">
                                 <img src="dist/images/agent-1.webp" alt="property 1" class="img-fluid br-4">
                             </div>
@@ -720,7 +726,7 @@
                             </div>
                         </div>
 
-                        <div class="card br-4">
+                        <div class="card br-4" id="3">
                             <div class="card__image m-auto p-5">
                                 <img src="dist/images/agent-2.webp" alt="property 1" class="img-fluid br-4">
                             </div>

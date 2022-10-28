@@ -1,7 +1,13 @@
 
 // == mobile nav ==
 
-const mobileMenu = document.getElementById("mobile-menu");
+const hamburger = document.getElementById("hamburger");
+
+hamburger.addEventListener('click', () => {
+    hamburger.classList.toggle('active')
+    // toggleNav(true)
+})
+
 function toggleNav(open){
     mobileMenu.classList.toggle('overlay__nav--active');
     toggleScroll(allowScroll = open ? false:true);
@@ -13,17 +19,3 @@ function toggleScroll(allowScroll){
     // document.body.classList.toggle('no-scroll');
     document.body.scroll = allowScroll ? 'yes':'no';
 }
-
-// == sticky header ==
-
-let header = document.getElementById("header");
-
-
-document.addEventListener('scroll', (e) => {
-    lastKnownScrollPosition = window.scrollY;
-    if (lastKnownScrollPosition >= 100){
-        header.classList.add('header--sticky');
-    }else if(lastKnownScrollPosition == 0){
-        header.classList.remove('header--sticky');
-    }
-})
