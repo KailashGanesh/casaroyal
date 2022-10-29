@@ -6,7 +6,9 @@
     right: 0;
     background-color: white;
     z-index: 2;
-    @include dimension(auto, 100%);
+    @include dimension(74px, 100%);
+    transition: all 0.3s ease-in-out;
+
     // font-size: 0;
 
     .container--edge{
@@ -53,37 +55,88 @@
         {
             transform-origin: 0% 100%;
         }
-        
-        /* 
-            * Transform all the slices of hamburger
-            * into a crossmark.
-        */
-      
     }
 }
 
-.active{
-    .hamburger
-    {
+.dropdown{
+    display: none;
+    position: absolute;
+    background-color: white;
+    box-shadow: 0px 9px 20px 1px;
+    border-top: $primary-blue 2px solid;
+    // transform: translateY(10%);
+    animation: animatezoom 0.6s forwards;
+    a{
+        padding: 12px;
+    }
+
+    a:hover{
+        background-color: $gray-one;
+        // color: $white;
+    }
+}
+
+.dropdown__active ~ .dropdown{
+    display: block;
+}
+
+.dropdown__active > .dropdown__arrow{
+    transform: rotate(-180deg);
+}
+
+.mobile-nav{
+    animation: animatezoom 0.6s forwards;
+    display:none;
+
+    li{
+        margin-top: 5vh;
+    }
+}
+
+.responsive{
+    height: 70vh;
+    .mobile-hide{
+        display: flex;
+    }
+    .hamburger {
         opacity: 1;
         transform: rotate(40deg) translate(0px, -2px);
         background: #232323;
+
+        &:nth-child(2) {
+            // hide the second one
+            opacity: 0;
+            transform: rotate(0deg) scale(0.2, 0.2);
+        }
+        
+        &:nth-child(3) {
+            // last one turns into other line for cross
+            transform: rotate(-45deg) translate(0, -1px);
+        }
     }
-    
-    /*
-        * But let's hide the middle one.
-        */
-   .hamburger:nth-child(2)
-    {
+
+    .mobile-nav{
+        display: block ;
+    }
+}
+
+
+@keyframes animatezoom {
+    0% {
         opacity: 0;
-        transform: rotate(0deg) scale(0.2, 0.2);
+        transform: scale(0) translateY(-100%);
+    } 
+    100%{
+        opacity: 1;
+        transform: scale(1) translateY(10%);
     }
-    
-    /*
-        * Ohyeah and the last one should go the other direction
-        */
-    .hamburger:nth-child(3)
-    {
-        transform: rotate(-45deg) translate(0, -1px);
+}
+
+@keyframes expandnav {
+    0% {
+        height: 100px;
+    } 
+    100%{
+        height: 70vh;
     }
 }

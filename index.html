@@ -13,28 +13,38 @@
 </head>
 
 <body>
-    <header class="header">
+    <header class="header" id="header">
         <div class="container--edge pl-5 pt-3 pb-3 fs-reset">
             <ul>
-                <li>
-                    <a href="javascript:void(0);">
-                    <svg class="header__logo ml-2">
-                        <use href="dist/symbol-defs.svg#icon-casarolyablacklogo"></use>
-                    </svg>
+                <a href="javascript:void(0);">
+                <svg class="header__logo ml-2">
+                    <use href="dist/symbol-defs.svg#icon-casarolyablacklogo"></use>
+                </svg>
+                </a>
+                <li class="fs-14 mobile-hide ">
+                    <a href="javascript:void(0);" class="link pl-5 dropdown__link ">HOMEPAGE
+                        <svg width="14" height="14" class="va-middle dropdown__arrow">
+                            <use href="dist/symbol-defs.svg#icon-angle-down-solid"></use>
+                        </svg>
+
                     </a>
+                    <div class="dropdown ml-3">
+                        <a class="d-block">Blog</a>
+                        <a class="d-block">Page</a>
+                        <a class="d-block">CasaRoyal</a>
+                    </div>
                 </li>
-                <li class="fs-14 mobile-hide">
-                    <a href="javascript:void(0);" class="link pl-5">HOMEPAGE
-                        <svg width="14" height="14" class="va-middle">
+                <li class="fs-14 mobile-hide"><a href="javascript:void(0);" class="link pl-5 dropdown__link">PROPERTIES
+                        <svg width="14" height="14" class="va-middle dropdown__arrow">
                             <use href="dist/symbol-defs.svg#icon-angle-down-solid"></use>
                         </svg>
                     </a>
+                    <div class="dropdown ml-3">
+                        <a class="d-block">Blog</a>
+                        <a class="d-block">Page</a>
+                        <a class="d-block">CasaRoyal</a>
+                    </div>
                 </li>
-                <li class="fs-14 mobile-hide"><a href="javascript:void(0);" class="link pl-5">PROPERTIES
-                        <svg width="14" height="14" class="va-middle">
-                            <use href="dist/symbol-defs.svg#icon-angle-down-solid"></use>
-                        </svg>
-                    </a></li>
                 <li class="fs-14 mobile-hide"><a href="javascript:void(0);" class="link pl-5">ABOUT</a></li>
                 <li class="fs-14 mobile-hide"><a href="javascript:void(0);" class="link pl-5">CONTACT</a></li>
             </ul>
@@ -70,6 +80,58 @@
                 </svg> -->
             </a>
 
+        </div>
+
+        <div class="mobile-nav">
+            <ul class="d-flex flex-direction-col">
+                <li class="fs-14 ">
+                    <a href="javascript:void(0);" class="link pl-5 dropdown__link ">HOMEPAGE
+                        <svg width="14" height="14" class="va-middle dropdown__arrow">
+                            <use href="dist/symbol-defs.svg#icon-angle-down-solid"></use>
+                        </svg>
+
+                    </a>
+                    <div class="dropdown ml-3">
+                        <a class="d-block">Blog</a>
+                        <a class="d-block">Page</a>
+                        <a class="d-block">CasaRoyal</a>
+                    </div>
+                </li>
+                <li class="fs-14"><a href="javascript:void(0);" class="link pl-5 dropdown__link">PROPERTIES
+                        <svg width="14" height="14" class="va-middle dropdown__arrow">
+                            <use href="dist/symbol-defs.svg#icon-angle-down-solid"></use>
+                        </svg>
+                    </a>
+                    <div class="dropdown ml-3">
+                        <a class="d-block">Blog</a>
+                        <a class="d-block">Page</a>
+                        <a class="d-block">CasaRoyal</a>
+                    </div>
+                </li>
+                <li class="fs-14 mobile-hide"><a href="javascript:void(0);" class="link pl-5">ABOUT</a></li>
+                <li class="fs-14 mobile-hide"><a href="javascript:void(0);" class="link pl-5">CONTACT</a></li>
+
+                <li class="fs-14">
+                    <a class="link" href="javascript:void(0);">
+                        COMPARE
+                        <svg width="20" height="20" class="ml-1 va-top">
+                            <use href="dist/symbol-defs.svg#icon-circle-check-regular"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="pl-5">
+                    <a href="javascript:void(0);">
+                        <svg width="20" height="20" class="va-middle">
+                            <use href="dist/symbol-defs.svg#icon-heart-regular"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="pl-5">
+                    <a href="" class="btn-orange-sq">
+                        Submit listing
+                    </a>
+                </li>
+            </ul>
         </div>
     </header>
 
@@ -1005,7 +1067,7 @@
                 <p class="m-auto fs-14 clr-gray-deep mb-3 tt-uppercase">CASAROYAL REAL ESTATE AGENCY</p>
                 <p class="m-auto fs-56 clr-black mb-20"><span class="fw-500">Our</span> Values</p>
 
-                <div class="d-flex gap-30 mb-15 flex-wrap">
+                <div class="d-flex gap-30 mb-15 flex-wrap jc-phone-center ">
                     <div class="card br-6 ta-l p-10" style="z-index:1;">
                         <svg class="fill-primary-blue mb-6" width="50" height="50">
                             <use href="dist/symbol-defs.svg#icon-comment-regular"></use>
@@ -1042,22 +1104,22 @@
                 <p class="m-auto fs-14 clr-white mb-3 tt-uppercase">CLIENTS REVIEWS</p>
                 <p class="m-auto fs-56 clr-white mb-20"><span class="fw-500">What</span> Our Clients Say</p>
 
-                <p class="fs-32 clr-white mb-14">
+                <p class="fs-32 clr-white mb-14 client__detail" id="quote">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam eleifend nunc
                     sem, sit amet luctus tellus tempus tempor. Interdum et malesuada fames ac ante 
                     ipsum primis in faucibus.
                 </p>
                 <div class="d-flex ai-center jc-space-between">
                     <div class="d-flex ai-center">
-                        <img src="dist/images/agent-2.webp" alt="profile picture" style="border-radius: 50%; width: 70px; height: 70px;">
+                        <img src="dist/images/agent-2.webp" alt="profile picture" style="border-radius: 50%; width: 70px; height: 70px;" id="authorImage" class="client__detail">
                         <div class="ml-4">
-                            <p class="clr-white fs-20">Alan poe</p>
-                            <p class="clr-white fs-12">San Francisco</p>
+                            <p class="clr-white fs-20 client__detail" id="authorName">Alan poe</p>
+                            <p class="clr-white fs-12 client__detail" id="authorLocation">San Francisco</p>
                         </div>
                     </div>
                     <div>
-                        <button class="bg-primary-blue clr-white btn p-2 pl-4 pr-4"> < </button>
-                        <button class="bg-primary-blue clr-white btn p-2 pl-4 pr-4"> > </button>
+                        <button class="bg-primary-blue clr-white btn p-2 pl-4 pr-4" id="backBtn"> < </button>
+                        <button class="bg-primary-blue clr-white btn p-2 pl-4 pr-4" id="forwardBtn"> > </button>
                     </div>
                 </div>
 
@@ -1083,38 +1145,50 @@
 
             <div class="d-flex jc-space-between flex-wrap">
 
-                <div class="clr-white d-flex gap-30 mb-40">
+                <div class="clr-white d-flex gap-30 mb-40 flex-wrap">
                     <ul>
-                        <li class="fw-500 mb-5">Information</li>
-                        <li class="mb-1 fw-300">Our Contacts</li>
-                        <li class="mb-1 fw-300">Privacy Policy</li>
-                        <li class="mb-1 fw-300">terms and Conditions</li>
-                        <li class="fw-300">FAQs</li>
+                        <li class="fw-500 mb-5"><a href="javascript:void(0);" class="link">Information</a></li>
+                        <li class="mb-1 fw-300"><a href="javascript:void(0);" class="link">Our Contacts</a></li>
+                        <li class="mb-1 fw-300"><a href="javascript:void(0);" class="link">Privacy Policy</a></li>
+                        <li class="mb-1 fw-300"><a href="javascript:void(0);" class="link">terms and Conditions</a></li>
+                        <li class="fw-300"><a href="javascript:void(0);" class="link">FAQs</a></li>
                     </ul>
 
                     <ul>
-                        <li class="fw-500 mb-5">Location</li>
-                        <li class="mb-1 fw-300">Beverly Hills</li>
-                        <li class="mb-1 fw-300">Los Angeles</li>
-                        <li class="mb-1 fw-300">Mission Viejo</li>
-                        <li class="mb-1 fw-300">Newport Beach</li>
-                        <li class="fw-300">Pasadena</li>
+                        <li class="fw-500 mb-5"><a href="javascript:void(0);" class="link">Location</a></li>
+                        <li class="mb-1 fw-300"><a href="javascript:void(0);" class="link">Beverly Hills</a></li>
+                        <li class="mb-1 fw-300"><a href="javascript:void(0);" class="link">Los Angeles</a></li>
+                        <li class="mb-1 fw-300"><a href="javascript:void(0);" class="link">Mission Viejo</a></li>
+                        <li class="mb-1 fw-300"><a href="javascript:void(0);" class="link">Newport Beach</a></li>
+                        <li class="fw-300"><a href="javascript:void(0);" class="link">Pasadena</a></li>
                     </ul>
                 </div>
 
-                <div>
+                <div class="mb-10">
                     <p class="clr-white fw-500 mb-5">ABOUT CASAROYAL</p>
-                    <p class="clr-white fw-300 mwidth-300">casaRoyal - Premium Real Estate WordPress Theme by FantasyThemes</p>
-                    <p>
-                        <span></span>
-                        <span></span>
+                    <p class="clr-white fw-300 mwidth-300 mb-5">casaRoyal - Premium Real Estate WordPress Theme by FantasyThemes</p>
+                    <p class="">
+                        <address class="clr-white">
+                                <svg class="ml-2 fill-white va-middle" width="14" height="14">
+                                    <use href="dist/symbol-defs.svg#icon-location-arrow-solid"></use>
+                                </svg>
+                            <span class="va-middle">111 Wall Street, USA, New York</span>
+                        </address>
+                        <span class="clr-white">
+                            <a href="tel:+1-234-567-8900" class="link">
+                                <svg class="ml-2 fill-white va-middle" width="14" height="14">
+                                    <use href="dist/symbol-defs.svg#icon-phone-solid"></use>
+                                </svg>
+                                <span class="va-middle">+1 (234) 567 8900</span>
+                            </a>
+                        </span>
                     </p>
                 </div>
 
             </div>
 
             <div class="d-flex jc-space-between flex-wrap">
-                <p class="clr-white fw-300 mb-2">Proudly powered by WordPress and casaRoyal by FantasyTheme</p>
+                <p class="clr-white fw-300 mb-4">Proudly powered by WordPress and casaRoyal by FantasyTheme</p>
 
                 <ul class="clr-white d-flex fw-300">
                     <li>Privacy Policy</li>

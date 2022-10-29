@@ -186,4 +186,9 @@
 
 .client-review{
     background: url('images/testimonials-bg.webp');
+
+    .client__detail{
+        transition: opacity 0.3s ease-in-out;
+        // filter: opacity(0.4);
+    }
 }
