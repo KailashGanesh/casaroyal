@@ -45,10 +45,6 @@
         bottom: 40px;
     }
 
-    &__details{
-        // position: relative;
-    }
-
     &__infos{
         display: flex;
         align-items: center;
@@ -58,14 +54,9 @@
         @include breakpoint(tablet-below){
             
         }
-        // position: absolute;
-        // left: 50%;
-        // bottom: 40px;
-        // transform: translateX(-50%);
     }
 
     &__info{
-        // max-width: 82px;
         display: flex;
         align-items: center;
         justify-content: space-between;
