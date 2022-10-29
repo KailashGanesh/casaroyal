@@ -56,7 +56,7 @@ forwardBtn.addEventListener('click', () => {
     }
 
     setOpacity('0');
-    setTimeout( setContent,300);
+    setTimeout( setContent,500);
 });
 
 backBtn.addEventListener('click', () => {
@@ -68,6 +68,6 @@ backBtn.addEventListener('click', () => {
     }
 
     setOpacity('0');
-    setTimeout(setContent,300);
+    setTimeout(setContent,500);
 
 });
