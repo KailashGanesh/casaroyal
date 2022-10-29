@@ -189,7 +189,11 @@
 
     .client__detail{
         transition: opacity 0.6s ease-in-out;
-        // filter: opacity(0.4);
+
+    }
+
+    #quote{
+        min-height: 96px;
     }
 }
 
