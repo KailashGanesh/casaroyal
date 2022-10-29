@@ -76,6 +76,14 @@
     }
 }
 
+.mobile-nav .dropdown{
+    position: static;
+    box-shadow: none;
+    margin-left: 20px;
+    animation: reveal-height 0.3s forwards;
+    height: 0;
+}
+
 .dropdown__active ~ .dropdown{
     display: block;
 }
@@ -95,9 +103,9 @@
 
 .responsive{
     height: 70vh;
-    .mobile-hide{
-        display: flex;
-    }
+    box-shadow: 0px 2px 20px 4px;
+    overflow-y: auto;
+    
     .hamburger {
         opacity: 1;
         transform: rotate(40deg) translate(0px, -2px);
@@ -116,7 +124,7 @@
     }
 
     .mobile-nav{
-        display: block ;
+        display: block;
     }
 }
 
@@ -138,5 +146,14 @@
     } 
     100%{
         height: 70vh;
+    }
+}
+
+@keyframes reveal-height {
+    0% {
+        height: 0px;
+    } 
+    100%{
+        height: 100px;
     }
 }
