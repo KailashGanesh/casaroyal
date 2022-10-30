@@ -4,13 +4,18 @@
     border: none;
     font-weight: 500;
     cursor: pointer;
-    // transition: all 0.3s ease-in-out 0s;
+    transition: all 150ms ease-in-out;
 
     &-orange-sq{
         background-color: $orange;
         color: $white;
         font-size: 16px;
         padding: 28px;
+        transition: all 150ms ease-in-out;
+
+        &:hover{
+            background-color: #FC4F4F;
+        }
     }
 
     &-blue{
@@ -18,13 +23,37 @@
         padding:19px 24px;
         border-radius: 4px;
         color: $white;
+
+        &:hover{
+            background-image: linear-gradient(90deg, #00C0FF 0%, #FFCF00 49%, #FC4F4F 80%, #00C0FF 100%);
+            // background-size: 400% 400%;
+            animation:slidebg 6s linear infinite;
+        }
     }
 
     &-black-rounded{
-        background-color: $black;
+        // background-color: $black;
         color: $white;
+        fill: $white;
         border-radius: 29px;
         padding: 18px 47px;
+
+        border-color: $black;
+        box-shadow: 0 0 40px 40px $black inset, 0 0 0 0 $black;
+        transition: all 150ms ease-in-out;
+        &:hover {
+            box-shadow: 0 0 10px 0 $black inset, 0 0 10px 4px black;
+            color: $black;
+            fill: black;
+        }
+          
+
     }
 }
 
+
+@keyframes slidebg {
+    to {
+      background-position:20vw;
+    }
+}
