@@ -11,10 +11,6 @@
     align-items: center;
     color: white;
 
-    @include breakpoint(tablet-below){
-
-    }
-
     &__warper{
         // min-width: min(1116px, 100vw);
         height: auto;
