@@ -1,0 +1,17 @@
+html:focus-within {
+    scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+    min-height: 100vh;
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+}
+
+.container{
+    // total size 1440px - 260px (side gaps) - 40px (padding gap)
+    max-width: 1212px;
+    margin: 0 auto;
+    padding: 0px 20px;
+}
