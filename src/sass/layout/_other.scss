@@ -27,15 +27,32 @@
     }
 
     &__image{
-        background-image: url('images/hotdeal.webp');
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
+        // background-image: url('images/hotdeal.webp');
+        // background-position: center;
+        // background-repeat: no-repeat;
+        // background-size: cover;
+        display: flex;
+
         min-width: 627px;
+        min-width: 50%;
+
         position: relative;
+
+        .img-fluid{
+            object-fit: cover;
+        }
+
         @include breakpoint(tablet-below){
             min-width: 0;
             min-height: 400px;
+        }
+    }
+
+    &__details{
+        min-width: 50%;
+
+        @include breakpoint(tablet-below){
+            min-width: 0;
         }
     }
 
@@ -115,26 +132,21 @@
         left: 31px;
     }
     .losangeles{
-        background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ) ,url("images/los-angeles.webp") no-repeat center center;
-        background-size: cover;
+        background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ) ,url("images/los-angeles.webp") no-repeat center center/cover;
     }
     .sanfrancisco{
-        background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ) , url("images/san-francisco.webp") no-repeat center center;
-        background-size: cover;
+        background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ) , url("images/san-francisco.webp") no-repeat center center/cover;
     }
     .seattle{
-        background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ) , url("images/seattle.webp") no-repeat center center;
-        background-size: cover;
+        background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ) , url("images/seattle.webp") no-repeat center center/cover;
     }
     .sandiego{
-        background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ) , url("images/san-diego.webp") no-repeat center center;
-        background-size: cover;
+        background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ) , url("images/san-diego.webp") no-repeat center center/cover;
     }
 }
 
 .sellproperty{ 
-    background:url("images/hero-bg.webp") no-repeat center center;
-    background-size: cover;
+    background:url("images/hero-bg.webp") no-repeat center center/cover;
     min-height: 869px;
 
     @include breakpoint(tablet-below){
@@ -157,30 +169,11 @@
     }
 }
 
-
-.linkedin-icon{
-    background: url('../src/svgs/linkedin-in.svg') no-repeat center center;
-    background-size:14px;
-}
-
-
-.facebook-icon{
-    background: url('../src/svgs/facebook-f.svg') no-repeat center center;
-    background-size:14px;
-}
-
-.twitter-icon{
-    background: url('../src/svgs/twitter.svg') no-repeat center center;
-    background-size:16px;
-}
-
-
 .client-review{
     background: url('images/testimonials-bg.webp');
 
     .client__detail{
         transition: opacity 0.6s ease-in-out;
-
     }
 
     #quote{
