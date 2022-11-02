@@ -19,15 +19,18 @@
         max-width: 100%;
     }
 
+    &__info{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: start;
+        height: 200px;
+    }
+
     &__image{
         width: 100%;
         max-width: 370px;
         position: relative;
-
-        @include breakpoint(phone-below){
-            max-width: 90%;
-        }
-
 
         .card__topleft{
             position: absolute;
@@ -99,4 +102,10 @@
         }
     }
 
+}
+
+.card-wrapper{
+   display: flex; 
+   flex-wrap: wrap;
+   gap: 30px;
 }
