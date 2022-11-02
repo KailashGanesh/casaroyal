@@ -3,17 +3,6 @@
     height: auto;
 }
 
-.mobile-hide{
-    @include breakpoint('tablet-below'){
-        display: none !important;
-    }
-}
-.desktop-hide{
-    @include breakpoint('tablet-above'){
-        display: none !important;
-    }
-}
-
 .link{
     color: inherit;
     cursor: pointer;

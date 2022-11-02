@@ -7,3 +7,14 @@
         @media (max-width: 767px) { @content; }
     }
 }
+
+.mobile-hide{
+    @include breakpoint('tablet-below'){
+        display: none !important;
+    }
+}
+.desktop-hide{
+    @include breakpoint('tablet-above'){
+        display: none !important;
+    }
+}

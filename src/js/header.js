@@ -5,7 +5,7 @@ const hamburger = document.getElementById("hamburger");
 const header = document.getElementById("header");
 
 hamburger.addEventListener('click', () => {
-    header.classList.toggle('responsive')
+    header.classList.toggle('mobile-nav--expand')
     // toggleNav(true)
 })
 
@@ -27,6 +27,10 @@ const dropDownLinks = document.getElementsByClassName('dropdown__link');
 
 for(let i = 0; i < dropDownLinks.length; i++){
     dropDownLinks[i].addEventListener('click', () => {
-       dropDownLinks[i].classList.toggle('dropdown__active');
+        dropDownLinks[i].classList.toggle('dropdown__active');
+    })
+
+    dropDownLinks[i].addEventListener('focusout', () => {
+        dropDownLinks[i].classList.remove('dropdown__active')
     })
 }
