@@ -1,8 +1,16 @@
+%icon-center{
+    width: 34px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .card{
     // flex-grow: 1;
     flex-shrink: 0;
     flex-basis: 370px;
-    max-width: 370px;
+    // max-width: 370px;
     // width: 370px;
     // min-height: 500px;
     background-color: white;
@@ -14,9 +22,50 @@
     &__image{
         width: 100%;
         max-width: 370px;
+        position: relative;
 
         @include breakpoint(phone-below){
             max-width: 90%;
+        }
+
+
+        .card__topleft{
+            position: absolute;
+            top:10px;
+            left: 10px;
+        }
+
+        .card__toplefttwo{
+            position: absolute;
+            top:10px;
+            left: 70px;
+        }
+
+        .card__topright{
+            position: absolute;
+            top:10px;
+            right: 10px;
+            @extend %icon-center;
+        }
+
+        .card__bottomleft{
+            position: absolute;
+            bottom:10px;
+            left: 10px;
+        }
+
+        .card__bottomrighttwo{
+            position: absolute;
+            bottom:10px;
+            right: 50px;
+            @extend %icon-center;
+        }
+
+        .card__bottomright{
+            position: absolute;
+            bottom:10px;
+            right: 10px;
+            @extend %icon-center;
         }
     }
 
